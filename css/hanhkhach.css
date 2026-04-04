@@ -1,0 +1,169 @@
+:root {
+    --bamboo-navy: #00305B;
+    --bamboo-green: #4C814D;
+    --bg-light: #F4F7F9;
+    --white: #ffffff;
+    --border-color: #DEE2E6;
+    --text-muted: #6c757d;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#passengerCarousel {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.header-status-box-new {
+    background: var(--white);
+    padding: 15px 45px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+.header-status-box-new h3 {
+    color: var(--bamboo-green);
+    font-weight: 700;
+    margin: 0;
+    font-size: 26px;
+    text-transform: none;
+}
+
+.form-wrapper {
+    margin-top: -30px;
+    position: relative;
+    z-index: 20;
+}
+
+.content-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 35px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 25px;
+}
+
+.section-title {
+    color: var(--bamboo-navy);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.floating-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.floating-group label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: var(--white);
+    padding: 0 8px;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+    z-index: 5;
+}
+
+.custom-input {
+    height: 55px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 100%;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-input:focus {
+    border-color: var(--bamboo-green);
+    box-shadow: 0 0 0 0.2rem rgba(76, 129, 77, 0.1);
+    outline: none;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+}
+
+.custom-checkbox:checked {
+    background-color: var(--bamboo-green);
+    border-color: var(--bamboo-green);
+}
+
+.form-check-label a {
+    color: var(--bamboo-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-check-label a:hover {
+    text-decoration: underline;
+}
+
+.btn-back {
+    border: 1px solid var(--border-color);
+    background: var(--white);
+    color: #555;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #f1f1f1;
+}
+
+.btn-confirm {
+    background-color: var(--bamboo-green);
+    color: var(--white);
+    border: none;
+    padding: 12px 50px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-confirm:hover {
+    background-color: #3d693e;
+    box-shadow: 0 4px 12px rgba(76, 129, 77, 0.3);
+}
+
+@media (max-width: 768px) {
+    #passengerCarousel { height: 250px; }
+    .header-status-box-new h3 { font-size: 20px; }
+    .content-card { padding: 20px; }
+}

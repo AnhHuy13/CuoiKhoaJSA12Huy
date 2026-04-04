@@ -152,13 +152,17 @@
                     </option>
                     <option value="HAN">Hà Nội (HAN)</option>
                     <option value="DAD">Đà Nẵng (DAD)</option>
-                    <option value="HUI">Huế (HUI)</option>
                     <option value="VCS">Côn Đảo (VCS)</option>
+                    <option value="HND">Tokyo (HND)</option>
+                    <option value="ICN">Seoul (ICN)</option>
+                    <option value="BKK">Bangkok (BKK)</option>
                   </select>
                 </div>
+
                 <div class="swap">
                   <button id="swap-button" type="button">⇄</button>
                 </div>
+
                 <div class="form-group">
                   <label> Tới </label>
                   <select
@@ -166,11 +170,13 @@
                     name="to-airport"
                     id="to-airport"
                   >
-                    <option selected="" value="HAN">Hà Nội (HAN)</option>
                     <option value="SGN">TP. Hồ Chí Minh (SGN)</option>
+                    <option selected="" value="HAN">Hà Nội (HAN)</option>
                     <option value="DAD">Đà Nẵng (DAD)</option>
-                    <option value="HUI">Huế (HUI)</option>
                     <option value="VCS">Côn Đảo (VCS)</option>
+                    <option value="HND">Tokyo (HND)</option>
+                    <option value="ICN">Seoul (ICN)</option>
+                    <option value="BKK">Bangkok (BKK)</option>
                   </select>
                 </div>
                 <div class="form-group">
@@ -179,11 +185,12 @@
                 </div>
                 <div class="form-group">
                   <label> Ngày về </label>
-                  <input class="form-control" type="date" />
+                  <input class="form-control" id="return-date" type="date" />
                 </div>
                 <div class="form-group">
                   <label> Hành khách </label>
                   <input
+                    id="passenger-count"
                     class="form-control"
                     max="9"
                     min="1"
