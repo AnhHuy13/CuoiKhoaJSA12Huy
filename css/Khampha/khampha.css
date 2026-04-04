@@ -1,0 +1,153 @@
+.main-content-wrapper {
+    max-width: 970px; 
+    
+    margin: 40px auto 0 auto;
+    padding: 0 15px;
+}
+
+.khamphatitle {
+    text-align: left;
+    margin-left: 0; 
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row; 
+    gap: 30px;
+    justify-content: flex-start; 
+    
+    flex-wrap: nowrap;
+    
+    padding-top: 0; 
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+
+
+.diemden-card-wrapper {
+    width: 455px; 
+    
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+    flex-shrink: 0;
+}
+
+.diemden-card-image {
+    width: 100%; 
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.diemden-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.diemden-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.diemden-title {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.diemden-arrow {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+.vemaybay-card-link {
+    width: 100%;
+    height: 23rem; 
+    margin-top: 40px; 
+    margin-bottom: 20px;
+    
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vemaybay-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.vemaybay-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    
+    background: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 5;
+}
+
+
+.vemaybay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.vemaybay-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.vemaybay-arrow {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 0;
+}

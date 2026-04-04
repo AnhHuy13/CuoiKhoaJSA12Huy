@@ -1,0 +1,147 @@
+/* GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Màu nền nhẹ nhàng */
+}
+
+/* --- Carousel Banner (Giữ nguyên định dạng cơ bản) --- */
+.carousel-item img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    object-position: 50% 30%;
+    border-bottom: 2px solid rgb(10,87,141);
+}
+
+/* --- Main Content Layout --- */
+.content-container {
+    max-width: 1100px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
+
+/* --- Tiêu đề và Slogan --- */
+.superapp-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgb(10,87,141);
+    margin-bottom: 5px;
+}
+
+.superapp-slogan, .superapp-intro {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    text-align: justify;
+}
+
+/* --- Vùng Nhấn mạnh Deal (Mã giảm giá) --- */
+.deal-highlight {
+    /* Đã loại bỏ màu nền nổi bật */
+    background-color: #f0f8ff; /* Màu xanh/trắng nhạt */
+    border: 1px solid rgb(10,87,141) !important; /* Thay dashed bằng solid */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.promo-code-text {
+    background-color: #eee; /* Nền xám nhạt */
+    padding: 4px 8px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    color: rgb(10,87,141); /* Mã vẫn dùng màu xanh lá hoặc đen */
+    font-weight: 700 !important;
+}
+
+.promo-percent {
+    font-size: 1.8rem;
+    color: #dc3545; /* Vẫn giữ màu đỏ cho phần trăm giảm giá */
+}
+
+/* --- Chi tiết Ưu đãi --- */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(10,87,141);
+    border-bottom: 1px solid #ccc; /* Viền mỏng */
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.detail-list {
+    list-style: none;
+    padding-left: 0;
+}
+.detail-list ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+/* --- Bảng Giai đoạn Cao điểm --- */
+.high-season-table {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.high-season-column {
+    padding: 15px;
+    border-right: 1px solid #eee;
+    background-color: #fcfcfc; /* Nền trắng/xám nhạt */
+}
+
+.high-season-column:last-child {
+    border-right: none;
+}
+
+.group-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc; /* Đơn giản hóa viền */
+}
+/* Giữ màu sắc cơ bản cho các nhóm để dễ phân biệt */
+.group-1 { justify-content: center; } /* Red */
+.group-2 { justify-content: center; } /* Orange */
+.group-3 { justify-content: center; } /* Green */
+.group-4 { justify-content: center; } /* Blue */
+
+.group-dates p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.group-routes {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #777;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+/* Bảng thanh toán */
+.payment-table {
+    max-width: 600px;
+}
+.payment-table th, .payment-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.payment-table .table-success {
+    background-color: #e2f7e2 !important; /* Màu xanh nhạt */
+    color: rgb(10,87,141);
+}

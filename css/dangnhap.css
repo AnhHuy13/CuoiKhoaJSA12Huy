@@ -1,0 +1,165 @@
+body {
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+}
+
+.login-page {
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url('https://www.bambooairways.com/o/bav.web.portal.login.page/assets/sky-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    max-width: 450px;
+    width: 90%;
+    padding: 40px 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin: 50px 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #005aab;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.login-form input:focus {
+    border-color: #005aab;
+    box-shadow: 0 0 0 3px rgba(0, 90, 171, 0.1);
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    padding-right: 45px !important;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+
+.password-toggle:hover {
+    color: #005aab;
+}
+
+.options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    margin-left: 8px;
+    cursor: pointer;
+    color: #555;
+    font-weight: normal;
+}
+
+.forgot-password {
+    color: #005aab;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #005aab;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #004585;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+    .title {
+        font-size: 18px;
+    }
+}

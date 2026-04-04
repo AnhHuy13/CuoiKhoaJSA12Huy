@@ -1,0 +1,111 @@
+:root {
+    --bamboo-green: #00875A;
+    --bamboo-blue: #0A578D;
+}
+
+body {
+    background-color: #f4f7f8;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.search-summary-bar {
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.city-box span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bamboo-blue);
+}
+
+.detail-item small {
+    color: #888;
+    display: block;
+    font-size: 0.75rem;
+}
+
+.btn-change-search {
+    background: #f0f4f7;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--bamboo-blue);
+}
+
+.flight-card-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.flight-card-item:hover {
+    transform: translateY(-2px);
+}
+
+.airport-code {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.path-line {
+    height: 1px;
+    background: #ddd;
+    position: relative;
+}
+
+.path-line::after {
+    content: '✈';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 0 5px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.fare-options-group {
+    width: 360px;
+}
+
+.fare-cell {
+    flex: 1;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.fare-cell.economy.active {
+    background-color: var(--bamboo-green);
+    color: white;
+}
+
+.fare-cell.economy.active .fare-price {
+    color: white;
+}
+
+.fare-name {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.fare-price {
+    font-size: 1.2rem;
+    color: var(--bamboo-green);
+}
+
+.fare-price span {
+    font-size: 0.8rem;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}

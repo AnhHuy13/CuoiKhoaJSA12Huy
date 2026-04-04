@@ -1,0 +1,85 @@
+/* GLOBAL STYLES (Chèn vào đầu file sleep.css nếu chưa có) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Màu nền nhẹ cho trang nội dung */
+}
+
+/* --- Carousel Banner ĐÃ CẬP NHẬT TỪ TRANG CHỦ --- */
+.carousel-item img {
+    /* Lấy từ trangchu.css */
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    object-position: 50% 30%;
+    border-bottom: 2px solid #007b5f;
+}
+
+/* Class mới để căn giữa nội dung chính (tương tự như Promotions) */
+.content-container {
+    max-width: 940px; /* Độ rộng tối đa gọn gàng cho nội dung chi tiết */
+    margin: 40px auto; /* Căn giữa và tạo khoảng cách */
+    padding: 0 20px; /* Padding hai bên cho mobile */
+}
+
+/* --- Tiêu đề và Slogan --- */
+.midnight-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #007b5f; 
+    margin-bottom: 5px;
+}
+
+.midnight-slogan {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.midnight-intro {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    text-align: justify;
+}
+
+/* --- Vùng Nhấn mạnh Deal (Mã giảm giá) --- */
+.deal-highlight {
+    background-color: #e6fff0 !important; 
+    border: 2px dashed #007b5f !important;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.promo-code-text {
+    background-color: #ffdddd; 
+    padding: 4px 8px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.promo-percent {
+    font-size: 1.8rem;
+}
+
+/* --- Chi tiết Ưu đãi --- */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007b5f;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.detail-list {
+    list-style: none;
+    padding-left: 0;
+}

@@ -1,0 +1,60 @@
+{
+  "diemDen": [
+    {
+      "id": "danang",
+      "city": "Đà Nẵng",
+      "country": "Việt Nam",
+      "description": "Thành phố của những cây cầu và những bãi biển quyến rũ nhất hành tinh.",
+      "link": "../html/Diemden/Danang.html",
+      "bgImage": "../image/KhamPhaDiemDen/DaNang.jpg"
+    },
+    {
+      "id": "bangkok",
+      "city": "Bangkok",
+      "country": "Thái Lan",
+      "description": "Thiên đường mua sắm và ẩm thực đường phố sôi động bậc nhất Đông Nam Á.",
+      "link": "../html/Diemden/Bangkok.html",
+      "bgImage": "../image/KhamPhaDiemDen/Bangkok.jpg"
+    },
+    {
+      "id": "condao",
+      "city": "Côn Đảo",
+      "country": "Việt Nam",
+      "description": "Hòn đảo hoang sơ với bề dày lịch sử và những vùng biển xanh ngắt tận đáy.",
+      "link": "../html/Diemden/Condao.html",
+      "bgImage": "../image/KhamPhaDiemDen/ConDao.jpg"
+    },
+    {
+      "id": "hanoi",
+      "city": "Hà Nội",
+      "country": "Việt Nam",
+      "description": "Thủ đô ngàn năm văn hiến với nét đẹp cổ kính và nhịp sống thanh bình.",
+      "link": "../html/Diemden/Hanoi.html",
+      "bgImage": "../image/KhamPhaDiemDen/Hanoi.jpg"
+    },
+    {
+      "id": "seoul",
+      "city": "Seoul",
+      "country": "Hàn Quốc",
+      "description": "Sự kết hợp hoàn hảo giữa cung điện cổ kính và công nghệ hiện đại hàng đầu.",
+      "link": "../html/Diemden/Seoul.html",
+      "bgImage": "../image/KhamPhaDiemDen/Seoul.jpeg"
+    },
+    {
+      "id": "tphcm",
+      "city": "TP. Hồ Chí Minh",
+      "country": "Việt Nam",
+      "description": "Thành phố không ngủ với nguồn năng lượng trẻ trung và sôi động nhất Việt Nam.",
+      "link": "../html/Diemden/Tphcm.html",
+      "bgImage": "../image/KhamPhaDiemDen/TPHCM.jpg"
+    },
+    {
+      "id": "tokyo",
+      "city": "Tokyo",
+      "country": "Nhật Bản",
+      "description": "Kinh đô ánh sáng của phương Đông, nơi truyền thống gặp gỡ tương lai.",
+      "link": "../html/Diemden/Tokyo.html",
+      "bgImage": "../image/KhamPhaDiemDen/Tokyo.webp" 
+    }
+  ]
+}

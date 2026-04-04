@@ -1,0 +1,143 @@
+/* Navbar Styles */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.navbar-nav.main-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.signin-option-navbar {
+    color:rgb(10,87,141);
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-nav.right-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.right-menu li {
+    display: flex;
+    align-items: center;
+}
+
+.signin-li::after {
+    content: "|";
+    margin: 0 5px;
+    color: #333;
+}
+
+.nav-link, .right-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-link:hover, .right-menu a:hover {
+    color: #007b5f;
+}
+
+/* Navbar Responsive */
+@media (max-width: 1024px) {
+    .navbar-container {
+        flex-wrap: wrap;
+    }
+    
+    .navbar-center {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 15px;
+    }
+    
+    .navbar-nav.main-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 15px;
+    }
+    
+    .navbar-nav.main-menu {
+        gap: 8px;
+    }
+    
+    .nav-link, .right-menu a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .navbar-left, .navbar-center, .navbar-right {
+        justify-content: center;
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .navbar-nav.main-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .navbar-nav.right-menu {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .signin-li::after {
+        display: none;
+    }
+    
+    .nav-link, .right-menu a {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+} 

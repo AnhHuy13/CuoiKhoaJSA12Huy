@@ -1,0 +1,184 @@
+.main-footer {
+    background-image: url(https://www.bambooairways.com/o/wpbav-content-theme/css/assets/footer-group_tablet.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: white;
+    background-size: 50%;
+    min-height: 400px;
+    border-top: 1px solid rgba(128, 128, 128, 0.463);
+}
+.slogan-and-logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 45px 0 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.divider-footer-logo {
+    width: 1px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.463);
+}
+
+.slogan-and-logo-footer h5 {
+    color: gray;
+    font-size: 20px;
+    margin: 0;
+}
+
+.install-qr-footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.install-app-qr, .install-sticker-qr {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.install-app-qr {
+    border: 3px solid rgb(204,227,199);
+}
+
+.install-sticker-qr {
+    border: 3px solid rgb(210,206,250);
+}
+
+.install-app-qr img, .install-sticker-qr img {
+    border-radius: 4px;
+    flex-shrink: 0;
+    max-width: 80px;
+}
+
+.install-app-qr-content, .install-sticker-qr-content {
+    flex: 1;
+}
+
+.install-app-qr h6, .install-sticker-qr h6 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+}
+
+.install-app-qr p, .install-sticker-qr p {
+    margin: 0;
+    font-size: 12px;
+    color: black;
+    line-height: 1.4;
+}
+
+.divider-footer {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+.chooser-footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.chooser-footer > div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.chooser-footer h5 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(10,87,141);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.bambooairways-footer-choice {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bambooairways-footer-choice a {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bambooairways-footer-choice a:hover {
+    color: #000;
+}
+
+@media (max-width: 1024px) {
+    .chooser-footer {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .install-qr-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .install-app-qr, .install-sticker-qr {
+        max-width: 100%;
+    }
+    
+    .chooser-footer {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 15px;
+    }
+    
+    .slogan-and-logo-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .divider-footer-logo {
+        width: 80%;
+        height: 1px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .install-app-qr, .install-sticker-qr {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .slogan-and-logo-footer h5 {
+        font-size: 18px;
+    }
+    
+    .chooser-footer > div {
+        min-width: 100%;
+    }
+}

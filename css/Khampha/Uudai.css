@@ -1,0 +1,59 @@
+body {
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#carouselExampleInterval {
+    margin-bottom: 70px;
+    padding-bottom: 0;
+}
+
+.main-container-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-container-1 h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.uudai-card {
+    width: 100%; 
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.uudai-card img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.uudai-card .card-body {
+    text-align: right; 
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.uudai-card .card-body a {
+    text-decoration: none;
+    color: rgb(53, 123, 41);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.uudai-card .card-text {
+    margin-bottom: 0; 
+}
