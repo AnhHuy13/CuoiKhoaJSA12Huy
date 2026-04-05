@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const pass = passwordInput.value.trim();
 
         const users = JSON.parse(localStorage.getItem('userList')) || [];
-        const found = users.find(u => u.email === email && u.pass === pass);
+        const found = users.find(u => u && u.email === email && u.pass === pass);
 
         if (found) {
             localStorage.setItem('currentUser', JSON.stringify(found));

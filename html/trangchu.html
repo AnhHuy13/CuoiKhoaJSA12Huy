@@ -1,404 +1,398 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Bamboo Airways - Hơn cả một chuyến bay</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Icon-Bamboo-Airways.png"
-      rel="icon"
-      type="image/png"
-    />
-    <link href="../css/trangchu.css" rel="stylesheet" />
-    <link href="../css/navbar.css" rel="stylesheet" />
-    <link href="../css/footer.css" rel="stylesheet" />
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <nav class="navbar bg-light">
-      <div class="navbar-container">
-        <div class="navbar-left">
-          <a class="navbar-brand" href="trangchu.html">
-            <img
-              alt="Logo"
-              height="40"
-              src="https://www.bambooairways.com/o/wpbav-home-theme/css/assets/logo.png"
-            />
-          </a>
-        </div>
-        <div class="navbar-center">
-          <ul class="navbar-nav main-menu">
-            <li class="nav-item">
-              <a class="nav-link" href="Khampha/khampha.html"> Khám phá </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Mangduongbay.html">
-                Thông tin hành trình
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./BambooClub/GioithieuQuyenloi.html">
-                Bamboo Club
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="navbar-right">
-          <ul class="navbar-nav right-menu">
-            <li class="signin-li">
-              <a class="signin-option-navbar" href="./dangnhap.html">
-                Đăng nhập
-              </a>
-            </li>
-            <li>
-              <a class="signup-option-navbar" href="./dangky.html"> Đăng ký </a>
-            </li>
-            <li>
-              <img
-                alt="Avatar"
-                height="20"
-                src="https://www.bambooairways.com/o/com.bav.header.languages/assets/Unlogin_Avatar.png"
-                width="20"
-              />
-            </li>
-          </ul>
-        </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Bamboo Airways - Hơn cả một chuyến bay
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Icon-Bamboo-Airways.png" rel="icon" type="image/png"/>
+  <link href="../css/trangchu.css" rel="stylesheet"/>
+  <link href="../css/navbar.css" rel="stylesheet"/>
+  <link href="../css/footer.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <nav class="navbar bg-light">
+   <div class="navbar-container">
+    <div class="navbar-left">
+     <a class="navbar-brand" href="trangchu.html">
+      <img alt="Logo" height="40" src="https://www.bambooairways.com/o/wpbav-home-theme/css/assets/logo.png"/>
+     </a>
+    </div>
+    <div class="navbar-center">
+     <ul class="navbar-nav main-menu">
+      <li class="nav-item">
+       <a class="nav-link" href="Khampha/khampha.html">
+        Khám phá
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="./Mangduongbay.html">
+        Thông tin hành trình
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="./BambooClub/GioithieuQuyenloi.html">
+        Bamboo Club
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="navbar-right">
+     <ul class="navbar-nav right-menu" id="auth-menu">
+      <li class="signin-li">
+       <a class="signin-option-navbar" href="./dangnhap.html">
+        Đăng nhập
+       </a>
+      </li>
+      <li>
+       <a class="signup-option-navbar" href="./dangky.html">
+        Đăng ký
+       </a>
+      </li>
+      <li>
+       <img alt="Avatar" height="20" src="https://www.bambooairways.com/o/com.bav.header.languages/assets/Unlogin_Avatar.png" width="20"/>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <div class="page-wrapper">
+   <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleInterval">
+    <div class="carousel-inner">
+     <div class="carousel-item active" data-bs-interval="2000">
+      <img alt="VNPay Promotion" class="d-block w-100" src="https://www.bambooairways.com/documents/20122/2230907/1920x770-vi-vnpay.jpg/7e5a6540-b343-ad51-93e2-32beb85a9675?t=1762325516173"/>
+     </div>
+     <div class="carousel-item" data-bs-interval="2000">
+      <img alt="Midnight Promotion" class="d-block w-100" src="https://www.bambooairways.com/documents/20122/2229185/1920x770-vi-midnight2026.jpg/25eafd4c-6a9f-beaf-55d1-4847399ad6ed?t=1762222743298"/>
+     </div>
+     <div class="carousel-item" data-bs-interval="2000">
+      <img alt="Superpay Promotion" class="d-block w-100" src="https://www.bambooairways.com/documents/20122/2253849/1920x770-vi-superapp.jpg/294a3975-3f2f-3a88-140d-cb839a538217?t=1764319886679"/>
+     </div>
+    </div>
+   </div>
+   <div class="box-booking-container">
+    <div class="box-booking">
+     <div class="box-header">
+      <div class="box-title-booking">
+       <h2>
+        Đặt Vé
+       </h2>
       </div>
-    </nav>
-
-    <div class="page-wrapper">
-      <div
-        class="carousel slide"
-        data-bs-ride="carousel"
-        id="carouselExampleInterval"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img
-              alt="VNPay Promotion"
-              class="d-block w-100"
-              src="https://www.bambooairways.com/documents/20122/2230907/1920x770-vi-vnpay.jpg/7e5a6540-b343-ad51-93e2-32beb85a9675?t=1762325516173"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              alt="Midnight Promotion"
-              class="d-block w-100"
-              src="https://www.bambooairways.com/documents/20122/2229185/1920x770-vi-midnight2026.jpg/25eafd4c-6a9f-beaf-55d1-4847399ad6ed?t=1762222743298"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              alt="Superpay Promotion"
-              class="d-block w-100"
-              src="https://www.bambooairways.com/documents/20122/2253849/1920x770-vi-superapp.jpg/294a3975-3f2f-3a88-140d-cb839a538217?t=1764319886679"
-            />
-          </div>
-        </div>
+      <div class="divider">
       </div>
-
-      <div class="box-booking-container">
-        <div class="box-booking">
-          <div class="box-header">
-            <div class="box-title-booking">
-              <h2>Đặt Vé</h2>
-            </div>
-            <div class="divider"></div>
-          </div>
-          <div class="booking-content">
-            <div class="flight-type-section">
-              <div class="flight-type">
-                <div class="type-option">
-                  <input
-                    checked=""
-                    id="one-way"
-                    name="flight-type"
-                    type="radio"
-                  />
-                  <label for="one-way"> Một chiều </label>
-                </div>
-                <div class="type-option">
-                  <input id="round-trip" name="flight-type" type="radio" />
-                  <label for="round-trip"> Khứ hồi </label>
-                </div>
-                <div class="type-option">
-                  <input id="multi-city" name="flight-type" type="radio" />
-                  <label for="multi-city"> Đa chặng </label>
-                </div>
-              </div>
-            </div>
-            <div class="booking-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label> Từ </label>
-                  <select
-                    class="form-control"
-                    name="from-airport"
-                    id="from-airport"
-                  >
-                    <option selected="" value="SGN">
-                      TP. Hồ Chí Minh (SGN)
-                    </option>
-                    <option value="HAN">Hà Nội (HAN)</option>
-                    <option value="DAD">Đà Nẵng (DAD)</option>
-                    <option value="VCS">Côn Đảo (VCS)</option>
-                    <option value="HND">Tokyo (HND)</option>
-                    <option value="ICN">Seoul (ICN)</option>
-                    <option value="BKK">Bangkok (BKK)</option>
-                  </select>
-                </div>
-
-                <div class="swap">
-                  <button id="swap-button" type="button">⇄</button>
-                </div>
-
-                <div class="form-group">
-                  <label> Tới </label>
-                  <select
-                    class="form-control"
-                    name="to-airport"
-                    id="to-airport"
-                  >
-                    <option value="SGN">TP. Hồ Chí Minh (SGN)</option>
-                    <option selected="" value="HAN">Hà Nội (HAN)</option>
-                    <option value="DAD">Đà Nẵng (DAD)</option>
-                    <option value="VCS">Côn Đảo (VCS)</option>
-                    <option value="HND">Tokyo (HND)</option>
-                    <option value="ICN">Seoul (ICN)</option>
-                    <option value="BKK">Bangkok (BKK)</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label> Ngày đi </label>
-                  <input class="form-control" id="departure-date" type="date" />
-                </div>
-                <div class="form-group">
-                  <label> Ngày về </label>
-                  <input class="form-control" id="return-date" type="date" />
-                </div>
-                <div class="form-group">
-                  <label> Hành khách </label>
-                  <input
-                    id="passenger-count"
-                    class="form-control"
-                    max="9"
-                    min="1"
-                    type="number"
-                    value="1"
-                  />
-                </div>
-              </div>
-              <div class="form-row promo-search-row">
-                <div class="promo-section">
-                  <div class="promo-label">NHẬP MÃ GIẢM</div>
-                  <div class="promo-code">
-                    <input
-                      class="promo-input rainbow-placeholder"
-                      placeholder="MONDAY"
-                      type="text"
-                      id="promo-code"
-                    />
-                  </div>
-                </div>
-                <button class="search-flight-btn" id="search-flight-btn">
-                  Tìm Chuyến Bay
-                </button>
-              </div>
-            </div>
-          </div>
+     </div>
+     <div class="booking-content">
+      <div class="flight-type-section">
+       <div class="flight-type">
+        <div class="type-option">
+         <input checked="" id="one-way" name="flight-type" type="radio"/>
+         <label for="one-way">
+          Một chiều
+         </label>
         </div>
-      </div>
-
-      <h3 class="uu-dai-h3">ƯU ĐÃI</h3>
-      <div class="promotions-selector">
-        <a class="promo-large" href="./Uudai/superapp.html">
-          <img
-            alt="Super App Deal"
-            class="promo-img"
-            src="../image/superapp-promotion.png"
-          />
-        </a>
-        <div class="promo-stack">
-          <a class="promo-small" href="./Uudai/sleep.html">
-            <img
-              alt="Midnight Deal"
-              class="promo-img"
-              src="../image/sleep-promotion.png"
-            />
-          </a>
-          <a class="promo-small" href="./Uudai/pay-promo.html">
-            <img
-              alt="Payment Deal"
-              class="promo-img"
-              src="../image/pay-promotion.png"
-            />
-          </a>
+        <div class="type-option">
+         <input id="round-trip" name="flight-type" type="radio"/>
+         <label for="round-trip">
+          Khứ hồi
+         </label>
         </div>
+        <div class="type-option">
+         <input id="multi-city" name="flight-type" type="radio"/>
+         <label for="multi-city">
+          Đa chặng
+         </label>
+        </div>
+       </div>
       </div>
-
-      <div class="explore-destination-container">
-        <div class="destination-hero" id="hero-container">
-          <div class="hero-content">
-            <h1 class="city-name" id="city-name">Đà Nẵng</h1>
-            <div class="city-info-meta">
-              <span class="location-tag">
-                <span id="country-name">Việt Nam</span>
-              </span>
-              <span class="weather-tag">
-                <i>|</i> <span id="temperature">Nhiệt độ: 28 °C</span>
-              </span>
-            </div>
-            <p class="city-description" id="city-description">
-              Đến với Đà Nẵng để mê mẩn trước những bãi cát trắng, đắm mình giữa
+      <div class="booking-form">
+       <div class="form-row">
+        <div class="form-group">
+         <label>
+          Từ
+         </label>
+         <select class="form-control" id="from-airport" name="from-airport">
+          <option selected="" value="SGN">
+           TP. Hồ Chí Minh (SGN)
+          </option>
+          <option value="HAN">
+           Hà Nội (HAN)
+          </option>
+          <option value="DAD">
+           Đà Nẵng (DAD)
+          </option>
+          <option value="VCS">
+           Côn Đảo (VCS)
+          </option>
+          <option value="HND">
+           Tokyo (HND)
+          </option>
+          <option value="ICN">
+           Seoul (ICN)
+          </option>
+          <option value="BKK">
+           Bangkok (BKK)
+          </option>
+         </select>
+        </div>
+        <div class="swap">
+         <button id="swap-button" type="button">
+          ⇄
+         </button>
+        </div>
+        <div class="form-group">
+         <label>
+          Tới
+         </label>
+         <select class="form-control" id="to-airport" name="to-airport">
+          <option value="SGN">
+           TP. Hồ Chí Minh (SGN)
+          </option>
+          <option selected="" value="HAN">
+           Hà Nội (HAN)
+          </option>
+          <option value="DAD">
+           Đà Nẵng (DAD)
+          </option>
+          <option value="VCS">
+           Côn Đảo (VCS)
+          </option>
+          <option value="HND">
+           Tokyo (HND)
+          </option>
+          <option value="ICN">
+           Seoul (ICN)
+          </option>
+          <option value="BKK">
+           Bangkok (BKK)
+          </option>
+         </select>
+        </div>
+        <div class="form-group">
+         <label>
+          Ngày đi
+         </label>
+         <input class="form-control" id="departure-date" type="date"/>
+        </div>
+        <div class="form-group">
+         <label>
+          Ngày về
+         </label>
+         <input class="form-control" id="return-date" type="date"/>
+        </div>
+        <div class="form-group">
+         <label>
+          Hành khách
+         </label>
+         <input class="form-control" id="passenger-count" max="9" min="1" type="number" value="1"/>
+        </div>
+       </div>
+       <div class="form-row promo-search-row">
+        <div class="promo-section">
+         <div class="promo-label">
+          NHẬP MÃ GIẢM
+         </div>
+         <div class="promo-code">
+          <input class="promo-input rainbow-placeholder" id="promo-code" placeholder="MONDAY" type="text"/>
+         </div>
+        </div>
+        <button class="search-flight-btn" id="search-flight-btn">
+         Tìm Chuyến Bay
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <h3 class="uu-dai-h3">
+    ƯU ĐÃI
+   </h3>
+   <div class="promotions-selector">
+    <a class="promo-large" href="./Uudai/superapp.html">
+     <img alt="Super App Deal" class="promo-img" src="../image/superapp-promotion.png"/>
+    </a>
+    <div class="promo-stack">
+     <a class="promo-small" href="./Uudai/sleep.html">
+      <img alt="Midnight Deal" class="promo-img" src="../image/sleep-promotion.png"/>
+     </a>
+     <a class="promo-small" href="./Uudai/pay-promo.html">
+      <img alt="Payment Deal" class="promo-img" src="../image/pay-promotion.png"/>
+     </a>
+    </div>
+   </div>
+   <div class="explore-destination-container">
+    <div class="destination-hero" id="hero-container">
+     <div class="hero-content">
+      <h1 class="city-name" id="city-name">
+       Đà Nẵng
+      </h1>
+      <div class="city-info-meta">
+       <span class="location-tag">
+        <span id="country-name">
+         Việt Nam
+        </span>
+       </span>
+       <span class="weather-tag">
+        <i>
+         |
+        </i>
+        <span id="temperature">
+         Nhiệt độ: 28 °C
+        </span>
+       </span>
+      </div>
+      <p class="city-description" id="city-description">
+       Đến với Đà Nẵng để mê mẩn trước những bãi cát trắng, đắm mình giữa
               làn nước xanh dưới cái nắng vàng ươm. Bạn sẽ ngỡ mình đang lạc vào
               chốn tiên cảnh nhân gian.
-            </p>
-            <a href="#" class="view-detail-btn" id="view-detail-link">
-              Xem Chi Tiết <span>→</span>
-            </a>
-          </div>
-
-          <div class="destination-controls">
-            <button id="prev-dest" class="control-btn">❮</button>
-            <button id="next-dest" class="control-btn">❯</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="dich-vu-bo-tro-h2-container">
-        <h3 class="dich-vu-bo-tro-h2">DỊCH VỤ BỔ TRỢ</h3>
-      </div>
-      <div class="container-2">
-        <div class="card" style="width: 18rem">
-          <img
-            alt="bảo hiểm bamboo airways"
-            class="card-img-top"
-            src="https://www.bambooairways.com/documents/20122/1221328/b%E1%BA%A3o-hi%E1%BB%83m-bamboo-care.jpg/7553c391-69f8-d48b-740e-2148ab2e3a7e?t=1697599496388"
-          />
-          <div class="card-body">
-            <a href="./dichvubotro/baohiem.html">
-              <h5 class="card-title">Bảo hiểm du lịch BambooCare</h5>
-            </a>
-            <p class="card-text">
-              Gác lại âu lo trong suốt hành trình của bạn với dịch vụ bảo hiểm
-              du lịch.
-            </p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            alt="Chọn chỗ ngồi yêu thích"
-            class="card-img-top"
-            src="https://www.bambooairways.com/documents/20122/1221328/ch%E1%BB%97-ng%E1%BB%93i.jpg/c91fb736-69e0-e24c-5d4d-adafea4db853?t=1697599496389"
-          />
-          <div class="card-body">
-            <a href="./dichvubotro/chongoiyeuthich.html">
-              <h5 class="card-title">Chọn chỗ ngồi yêu thích</h5>
-            </a>
-            <p class="card-text">
-              Lựa chọn chỗ ngồi yêu thích của bạn trong chuyến bay ngày hôm nay.
-            </p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            alt="Quà tặng bamboo"
-            class="card-img-top"
-            src="https://www.bambooairways.com/documents/20122/1221328/qu%C3%A0-l%C6%B0u-ni%E1%BB%87m.jpg/50617895-8370-a647-71bd-a2afd7b351fe?t=1697599496389"
-          />
-          <div class="card-body">
-            <a href="./dichvubotro/quatang.html">
-              <h5 class="card-title">Quà tặng Bamboo</h5>
-            </a>
-            <p class="card-text">
-              Những món quà lưu niệm của Bamboo Airways luôn nhận được sự yêu
-              thích của hành khách.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <footer>
-        <div class="main-footer">
-          <div class="slogan-and-logo-footer">
-            <img
-              alt="Icon-Bamboo-Airways"
-              height="50"
-              src="https://www.bambooairways.com/o/wpbav-home-theme/css/assets/logo.png"
-            />
-            <div class="divider-footer-logo"></div>
-            <h5>HƠN CẢ MỘT CHUYẾN BAY</h5>
-          </div>
-          <div class="divider-footer"></div>
-          <div class="install-qr-footer">
-            <div class="install-app-qr">
-              <img
-                alt="qr_code_install_app"
-                height="70"
-                src="https://www.bambooairways.com/documents/20122/770343/app.png/4074ab42-5f15-760b-9bb7-5d522d7ff200?t=1697600790190"
-                width="70"
-              />
-              <div class="install-app-qr-content">
-                <h6>Cài đặt ứng dụng</h6>
-                <p>Quét mã ngay để cài đặt từ các</p>
-                <p>cửa hàng ứng dụng!</p>
-              </div>
-            </div>
-            <div class="install-sticker-qr">
-              <img
-                alt="qr_code_install_sticker"
-                height="70"
-                src="https://www.bambooairways.com/documents/20122/770343/viber-bamboo.png/a21d4733-0669-665b-4b16-a12e153b7098?t=1697600790190"
-                width="70"
-              />
-              <div class="install-sticker-qr-content">
-                <h6>Cài đặt nhãn dán</h6>
-                <p>Quét mã ngay để sở hữu bộ nhãn dán Viber!</p>
-              </div>
-            </div>
-          </div>
-          <div class="divider-footer"></div>
-          <div class="chooser-footer">
-            <div class="bambooairways-footer">
-              <h5>Bamboo Airways</h5>
-              <div class="bambooairways-footer-choice">
-                <a href="BambooAirways/gioithieu.html">
-                  Giới thiệu về Bamboo Airways
-                </a>
-                <a href="BambooAirways/thongdiep.html">
-                  Thông điệp của Bamboo Airways
-                </a>
-                <a href="BambooAirways/nhandienthuonghieu.html">
-                  Nhận diện thương hiệu
-                </a>
-              </div>
-            </div>
-            <div class="dieukhoanphaply-footer">
-              <h5>Điều khoản & Pháp lý</h5>
-              <div class="bambooairways-footer-choice">
-                <a href="Dieukhoan/dieukhoan.html">
-                  Điều khoản sử dụng website
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      </p>
+      <a class="view-detail-btn" href="#" id="view-detail-link">
+       Xem Chi Tiết
+       <span>
+        →
+       </span>
+      </a>
+     </div>
+     <div class="destination-controls">
+      <button class="control-btn" id="prev-dest">
+       ❮
+      </button>
+      <button class="control-btn" id="next-dest">
+       ❯
+      </button>
+     </div>
     </div>
-    <script src="../js/trangchu.js"></script>
-    <script>
-      (function () {
+   </div>
+   <div class="dich-vu-bo-tro-h2-container">
+    <h3 class="dich-vu-bo-tro-h2">
+     DỊCH VỤ BỔ TRỢ
+    </h3>
+   </div>
+   <div class="container-2">
+    <div class="card" style="width: 18rem">
+     <img alt="bảo hiểm bamboo airways" class="card-img-top" src="https://www.bambooairways.com/documents/20122/1221328/b%E1%BA%A3o-hi%E1%BB%83m-bamboo-care.jpg/7553c391-69f8-d48b-740e-2148ab2e3a7e?t=1697599496388"/>
+     <div class="card-body">
+      <a href="./dichvubotro/baohiem.html">
+       <h5 class="card-title">
+        Bảo hiểm du lịch BambooCare
+       </h5>
+      </a>
+      <p class="card-text">
+       Gác lại âu lo trong suốt hành trình của bạn với dịch vụ bảo hiểm
+              du lịch.
+      </p>
+     </div>
+    </div>
+    <div class="card" style="width: 18rem">
+     <img alt="Chọn chỗ ngồi yêu thích" class="card-img-top" src="https://www.bambooairways.com/documents/20122/1221328/ch%E1%BB%97-ng%E1%BB%93i.jpg/c91fb736-69e0-e24c-5d4d-adafea4db853?t=1697599496389"/>
+     <div class="card-body">
+      <a href="./dichvubotro/chongoiyeuthich.html">
+       <h5 class="card-title">
+        Chọn chỗ ngồi yêu thích
+       </h5>
+      </a>
+      <p class="card-text">
+       Lựa chọn chỗ ngồi yêu thích của bạn trong chuyến bay ngày hôm nay.
+      </p>
+     </div>
+    </div>
+    <div class="card" style="width: 18rem">
+     <img alt="Quà tặng bamboo" class="card-img-top" src="https://www.bambooairways.com/documents/20122/1221328/qu%C3%A0-l%C6%B0u-ni%E1%BB%87m.jpg/50617895-8370-a647-71bd-a2afd7b351fe?t=1697599496389"/>
+     <div class="card-body">
+      <a href="./dichvubotro/quatang.html">
+       <h5 class="card-title">
+        Quà tặng Bamboo
+       </h5>
+      </a>
+      <p class="card-text">
+       Những món quà lưu niệm của Bamboo Airways luôn nhận được sự yêu
+              thích của hành khách.
+      </p>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <div class="main-footer">
+     <div class="slogan-and-logo-footer">
+      <img alt="Icon-Bamboo-Airways" height="50" src="https://www.bambooairways.com/o/wpbav-home-theme/css/assets/logo.png"/>
+      <div class="divider-footer-logo">
+      </div>
+      <h5>
+       HƠN CẢ MỘT CHUYẾN BAY
+      </h5>
+     </div>
+     <div class="divider-footer">
+     </div>
+     <div class="install-qr-footer">
+      <div class="install-app-qr">
+       <img alt="qr_code_install_app" height="70" src="https://www.bambooairways.com/documents/20122/770343/app.png/4074ab42-5f15-760b-9bb7-5d522d7ff200?t=1697600790190" width="70"/>
+       <div class="install-app-qr-content">
+        <h6>
+         Cài đặt ứng dụng
+        </h6>
+        <p>
+         Quét mã ngay để cài đặt từ các
+        </p>
+        <p>
+         cửa hàng ứng dụng!
+        </p>
+       </div>
+      </div>
+      <div class="install-sticker-qr">
+       <img alt="qr_code_install_sticker" height="70" src="https://www.bambooairways.com/documents/20122/770343/viber-bamboo.png/a21d4733-0669-665b-4b16-a12e153b7098?t=1697600790190" width="70"/>
+       <div class="install-sticker-qr-content">
+        <h6>
+         Cài đặt nhãn dán
+        </h6>
+        <p>
+         Quét mã ngay để sở hữu bộ nhãn dán Viber!
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="divider-footer">
+     </div>
+     <div class="chooser-footer">
+      <div class="bambooairways-footer">
+       <h5>
+        Bamboo Airways
+       </h5>
+       <div class="bambooairways-footer-choice">
+        <a href="BambooAirways/gioithieu.html">
+         Giới thiệu về Bamboo Airways
+        </a>
+        <a href="BambooAirways/thongdiep.html">
+         Thông điệp của Bamboo Airways
+        </a>
+        <a href="BambooAirways/nhandienthuonghieu.html">
+         Nhận diện thương hiệu
+        </a>
+       </div>
+      </div>
+      <div class="dieukhoanphaply-footer">
+       <h5>
+        Điều khoản & Pháp lý
+       </h5>
+       <div class="bambooairways-footer-choice">
+        <a href="Dieukhoan/dieukhoan.html">
+         Điều khoản sử dụng website
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="../js/trangchu.js">
+  </script>
+  <script>
+   (function () {
         if (!window.chatbase || window.chatbase("getState") !== "initialized") {
           window.chatbase = (...arguments) => {
             if (!window.chatbase.q) {
@@ -428,6 +422,8 @@
           window.addEventListener("load", onLoad);
         }
       })();
-    </script>
-  </body>
+  </script>
+  <script src="../js/navbar.js">
+  </script>
+ </body>
 </html>

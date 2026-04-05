@@ -4,10 +4,9 @@ const dobInput = document.getElementById('dob');
 const genderSelect = document.getElementById('gender-input');
 const emailInput = document.getElementById('email-input');
 const phoneInput = document.getElementById('phone');
-const password = document.getElementById('password-input');
-const confirmPass = document.getElementById('confirm-password');
-const dieuKhoan = document.getElementById('thefirst');
-const adsAccept = document.getElementById('thesecond');
+const passwordInput = document.getElementById('password-input');
+const confirmPassInput = document.getElementById('confirm-password');
+const dieuKhoanCheckbox = document.getElementById('thefirst');
 const buttonSubmit = document.getElementById('submitBtn');
 
 buttonSubmit.addEventListener('click', (e) => {
@@ -19,8 +18,8 @@ buttonSubmit.addEventListener('click', (e) => {
     const gender = genderSelect.value;
     const email = emailInput.value.trim();
     const phone = phoneInput.value.trim();
-    const pass = password.value;
-    const confirm = confirmPass.value;
+    const pass = passwordInput.value;
+    const confirm = confirmPassInput.value;
 
     if (!ho || !ten || !dob || !gender || !email || !phone || !pass || !confirm) {
         alert("Vui lòng điền đầy đủ tất cả các trường có dấu (*)");
@@ -34,7 +33,7 @@ buttonSubmit.addEventListener('click', (e) => {
     }
 
     if (isNaN(phone) || phone.length < 10 || phone.length > 11) {
-        alert("Số điện thoại không hợp lệ!");
+        alert("Số điện thoại không hợp lệ (phải từ 10-11 số)!");
         return;
     }
 
@@ -48,21 +47,52 @@ buttonSubmit.addEventListener('click', (e) => {
         return;
     }
 
-    if (!dieuKhoan.checked) {
+    if (!dieuKhoanCheckbox.checked) {
         alert("Bạn phải đồng ý với Điều khoản sử dụng!");
         return;
     }
 
-    alertHoanThanh();
-    window.location.href = "dangnhap.html";
+    const newUser = {
+        name: `${ho} ${ten}`,
+        email: email,
+        pass: pass,
+        phone: phone,
+        dob: dob,
+        gender: gender,
+        createdAt: new Date().toISOString()
+    };
+
+    const isSuccess = handleRegister(newUser);
+
+    if (isSuccess) {
+        window.location.href = "dangnhap.html";
+    }
 });
 
-function alertHoanThanh(userData) {
-    let users = JSON.parse(localStorage.getItem('userList')) || [];
+/**
+ * Hàm xử lý lưu trữ User
+ * @param {Object} userData - Đối tượng chứa thông tin user mới
+ */
+function handleRegister(userData) {
+    let rawData = localStorage.getItem('userList');
+    let users = [];
+
+    try {
+        users = rawData ? JSON.parse(rawData) : [];
+        
+        if (!Array.isArray(users)) {
+            users = [];
+        } else {
+            users = users.filter(u => u !== null && typeof u === 'object');
+        }
+    } catch (error) {
+        console.error("Lỗi đọc dữ liệu LocalStorage:", error);
+        users = [];
+    }
 
     const isExisted = users.some(u => u.email === userData.email);
     if (isExisted) {
-        alert("Email này đã được đăng ký rồi ông giáo ạ!");
+        alert("Email này đã được đăng ký trên hệ thống!");
         return false;
     }
 
@@ -70,6 +100,6 @@ function alertHoanThanh(userData) {
 
     localStorage.setItem('userList', JSON.stringify(users));
 
-    alert("Bạn đã thành công tạo tài khoản mới!");
+    alert("Chúc mừng! Bạn đã tạo tài khoản Bamboo Airways thành công.");
     return true;
 }
