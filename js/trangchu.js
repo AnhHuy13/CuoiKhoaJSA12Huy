@@ -204,5 +204,3 @@ function setupSliderButtons() {
         await ChenData(curIdx);
     });
 }
-
-console.log("say wallahhi bro");
