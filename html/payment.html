@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán - Bamboo Airways</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/payment.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-light">
+      <div class="navbar-container">
+        <div class="navbar-left">
+          <a class="navbar-brand" href="trangchu.html">
+            <img
+              alt="Logo"
+              height="40"
+              src="https://www.bambooairways.com/o/wpbav-home-theme/css/assets/logo.png"
+            />
+          </a>
+        </div>
+        <div class="navbar-center">
+          <ul class="navbar-nav main-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="trangchu.html"> Quay về Trang Chủ </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="payment-main-wrapper">
+      <div class="payment-container shadow-lg">
+        <h3 id="paymenttitle">
+          <i class="bi bi-credit-card-2-front me-2"></i> Thông tin thanh toán
+        </h3>
+
+        <form action="/submit-form" method="post">
+          <div class="card-accepted">
+            <label class="small-label">Thẻ được chấp nhận:</label>
+            <div class="card-icons">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/MasterCard_early_1990s_logo.svg/250px-MasterCard_early_1990s_logo.svg.png"
+                alt="MasterCard"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/40/Visa_Inc._logo_%281999%E2%80%932005%29.svg"
+                alt="Visa"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png"
+                alt="Amex"
+              />
+              <img
+                src="https://1000logos.net/wp-content/uploads/2017/05/Paypal-Logo-2022.png"
+                alt="Paypal"
+              />
+            </div>
+          </div>
+
+          <div class="input-group-custom">
+            <label for="cardName">Tên chủ thẻ:</label>
+            <input
+              type="text"
+              name="cardName"
+              id="cardName"
+              placeholder="NGUYEN VAN A"
+              required
+            />
+          </div>
+
+          <div class="input-group-custom">
+            <label for="cardNumber">Số thẻ tín dụng:</label>
+            <div class="card-input-wrapper">
+              <input
+                type="text"
+                name="cardNumber"
+                id="cardNumber"
+                placeholder="1111-2222-3333-4444"
+                required
+              />
+              <i class="bi bi-lock-fill"></i>
+            </div>
+          </div>
+
+          <div class="row-flex">
+            <div class="input-group-custom half">
+              <label for="monthSelect">Tháng hết hạn:</label>
+              <select id="monthSelect" name="selectedMonth" required>
+                <option value="" disabled selected>Chọn tháng</option>
+                <script>
+                  for (let i = 1; i <= 12; i++)
+                    document.write(`<option value="${i}">Tháng ${i}</option>`);
+                </script>
+              </select>
+            </div>
+
+            <div class="input-group-custom half">
+              <label for="expYear">Năm hết hạn:</label>
+              <select id="expYear" name="expYear" required>
+                <option value="" disabled selected>Chọn năm</option>
+                <script>
+                  const year = new Date().getFullYear();
+                  for (let i = 0; i <= 10; i++)
+                    document.write(
+                      `<option value="${year + i}">${year + i}</option>`,
+                    );
+                </script>
+              </select>
+            </div>
+
+            <div class="input-group-custom half">
+              <label for="cvv">Mã CVV:</label>
+              <input
+                type="number"
+                name="cvv"
+                id="cvv"
+                placeholder="123"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="total-amount-box">
+            <span>Tổng số tiền cần thanh toán:</span>
+            <h4 class="text-success">4.671.000 VND</h4>
+          </div>
+
+          <button type="submit" id="submitBtn">XÁC NHẬN THANH TOÁN</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="slogan-and-logo-footer">
+          <img
+            alt="Icon-Bamboo-Airways"
+            height="50"
+            src="https://www.bambooairways.com/o/wpbav-home-theme/css/assets/logo.png"
+          />
+          <div class="divider-footer-logo"></div>
+          <h5>HƠN CẢ MỘT CHUYẾN BAY</h5>
+        </div>
+        <div class="divider-footer"></div>
+        <div class="install-qr-footer">
+          <div class="install-app-qr">
+            <img
+              alt="qr_code"
+              height="70"
+              src="https://www.bambooairways.com/documents/20122/770343/app.png/4074ab42-5f15-760b-9bb7-5d522d7ff200?t=1697600790190"
+              width="70"
+            />
+            <div class="install-app-qr-content">
+              <h6>Cài đặt ứng dụng</h6>
+              <p>Quét mã ngay để cài đặt từ các cửa hàng ứng dụng!</p>
+            </div>
+          </div>
+          <div class="install-sticker-qr">
+            <img
+              alt="qr_code"
+              height="70"
+              src="https://www.bambooairways.com/documents/20122/770343/viber-bamboo.png/a21d4733-0669-665b-4b16-a12e153b7098?t=1697600790190"
+              width="70"
+            />
+            <div class="install-sticker-qr-content">
+              <h6>Cài đặt nhãn dán</h6>
+              <p>Quét mã ngay để sở hữu bộ nhãn dán Viber!</p>
+            </div>
+          </div>
+        </div>
+        <div class="divider-footer"></div>
+        <div class="chooser-footer">
+          <div class="bambooairways-footer">
+            <h5>Bamboo Airways</h5>
+            <div class="bambooairways-footer-choice">
+              <a href="BambooAirways/gioithieu.html">
+                Giới thiệu về Bamboo Airways
+              </a>
+              <a href="BambooAirways/thongdiep.html">
+                Thông điệp của Bamboo Airways
+              </a>
+              <a href="BambooAirways/nhandienthuonghieu.html">
+                Nhận diện thương hiệu
+              </a>
+            </div>
+          </div>
+          <div class="dieukhoanphaply-footer">
+            <h5>Điều khoản & Pháp lý</h5>
+            <div class="bambooairways-footer-choice">
+              <a href="Dieukhoan/dieukhoan.html">
+                Điều khoản sử dụng website
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/payment.js"></script>
+  </body>
+</html>

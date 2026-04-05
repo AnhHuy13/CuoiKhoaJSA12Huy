@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xác nhận dịch vụ - Bamboo Airways</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/chondichvu.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-light">
+      <div class="navbar-container">
+        <div class="navbar-left">
+          <a class="navbar-brand" href="trangchu.html">
+            <img
+              alt="Logo"
+              height="40"
+              src="https://www.bambooairways.com/o/wpbav-home-theme/css/assets/logo.png"
+            />
+          </a>
+        </div>
+        <div class="navbar-center">
+          <ul class="navbar-nav main-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="trangchu.html">Quay về Trang Chủ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="passengerCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.bambooairways.com/documents/20122/757833/Th%C3%B4ng+%C4%91i%E1%BB%87p+Bamboo+Airways.jpg/b558e554-a395-2e4e-d259-d60969884018?t=1688567585898"
+            class="d-block w-100 carousel-img"
+            alt="Banner"
+          />
+          <div
+            class="carousel-content-overlay d-flex align-items-center justify-content-center"
+          >
+            <div class="header-status-box-new text-center shadow-lg">
+              <h3 id="route-header">Xác nhận thông tin & Dịch vụ</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 content-wrapper">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="content-card shadow-sm mb-4">
+            <h5 class="section-title">Chuyến bay của bạn</h5>
+            <div id="flight-summary-list"></div>
+          </div>
+
+          <div class="content-card shadow-sm mb-4">
+            <h5 class="section-title">Thông tin hành khách</h5>
+            <div
+              class="passenger-detail-box d-flex align-items-center p-3 border rounded bg-light"
+            >
+              <div class="user-icon me-3">
+                <i class="bi bi-person-circle fs-1 text-success"></i>
+              </div>
+              <div id="passenger-info-display">
+                <h6 id="p-name" class="fw-bold mb-1">---</h6>
+                <p id="p-contact" class="small text-muted mb-0">---</p>
+              </div>
+              <i class="bi bi-check-circle-fill ms-auto text-success fs-4"></i>
+            </div>
+          </div>
+
+          <div class="content-card shadow-sm mb-4">
+            <div
+              class="d-flex justify-content-between align-items-start mb-4 gap-3"
+            >
+              <div>
+                <h5 class="section-title-insurance fw-bold">
+                  Bảo hiểm du lịch BambooCARE
+                </h5>
+                <div class="d-flex align-items-start gap-2 text-success mt-2">
+                  <i class="bi bi-check-lg"></i>
+                  <p class="small mb-0">
+                    Lựa chọn BambooCARE làm người bạn đồng hành đáng tin cậy để
+                    được bảo vệ và hỗ trợ trong suốt chuyến đi.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="../image/insurance.png"
+                alt="BambooCARE Banner"
+                class="insurance-banner rounded"
+              />
+            </div>
+
+            <p class="text-muted small mb-4">
+              Bảo hiểm du lịch BambooCARE đã được chọn trước cho Quý khách. Lựa
+              chọn này có thể được thay đổi để phù hợp với nhu cầu cá nhân.
+              <a href="#" class="text-success text-decoration-none fw-bold"
+                >Xem thêm Quyền lợi, Quy tắc bảo hiểm và Nội dung tuyên bố và ủy
+                quyền.</a
+              >
+            </p>
+
+            <div class="row g-3 mb-4">
+              <div class="col-md-6 col-xl-4 d-flex gap-2">
+                <div class="benefit-circle"></div>
+                <span class="small text-muted"
+                  >Quyền lợi chi phí y tế phát sinh do tai nạn hay ốm đau</span
+                >
+              </div>
+              <div class="col-md-6 col-xl-4 d-flex gap-2">
+                <div class="benefit-circle"></div>
+                <span class="small text-muted"
+                  >Quyền lợi bảo hiểm tai nạn cá nhân lên đến 1 tỷ đồng</span
+                >
+              </div>
+              <div class="col-md-6 col-xl-4 d-flex gap-2">
+                <div class="benefit-circle"></div>
+                <span class="small text-muted"
+                  >Dịch vụ Hỗ trợ y tế và cứu trợ khẩn cấp 24/7</span
+                >
+              </div>
+            </div>
+
+            <div class="insurance-options">
+              <p class="text-success fw-bold mb-3">
+                249.000 VND
+                <span class="text-muted fw-normal">cho tất cả hành khách</span>
+              </p>
+              <label
+                class="insurance-radio-card d-flex align-items-center p-3 border rounded mb-2 active"
+              >
+                <input
+                  type="radio"
+                  name="insurance"
+                  value="yes"
+                  checked
+                  class="form-check-input me-3"
+                />
+                <span class="fw-bold">Vâng, tôi muốn bảo hiểm</span>
+              </label>
+              <label
+                class="insurance-radio-card d-flex align-items-center p-3 border rounded"
+              >
+                <input
+                  type="radio"
+                  name="insurance"
+                  value="no"
+                  class="form-check-input me-3"
+                />
+                <span class="fw-bold">Không có bảo hiểm</span>
+              </label>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <p>Được cung cấp bởi:</p>
+              <img
+                src="https://digital.bambooairways.com/statics/applications/booking/dynamicContent/1.0.13/assets/img/services/insurance/InsurancePowered.jpg"
+                alt="Partner"
+                height="20"
+                class="opacity-75"
+                id="imgPartner"
+              />
+              <p class="mb-0 text-success fw-bold fs-5">
+                Tổng cộng: 249.000 VND
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <h5 class="section-title mb-3">Các dịch vụ bổ sung</h5>
+
+          <div class="content-card shadow-sm mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <h6 class="fw-bold mb-1">Mua thêm hành lý</h6>
+                <p class="small text-muted mb-0">
+                  Chọn số lượng kiện hành lý ký gửi thêm (20kg/kiện)
+                </p>
+              </div>
+              <div style="width: 120px">
+                <div class="input-group">
+                  <span class="input-group-text">SL</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    value="0"
+                    min="0"
+                    step="1"
+                  />
+                </div>
+              </div>
+            </div>
+            <p class="text-success fw-bold mt-2 mb-0">Từ 65.000 VND</p>
+          </div>
+
+          <div class="content-card shadow-sm mb-4">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div>
+                <h6 class="fw-bold mb-1">Phòng chờ khách Hạng Thương gia</h6>
+                <p class="small text-muted mb-0">
+                  Tận hưởng không gian sang trọng và đầy đủ tiện nghi trước
+                  chuyến bay.
+                </p>
+                <p class="text-success fw-bold mt-2">450.000 VND / Khách</p>
+              </div>
+              <img
+                src="https://www.bambooairways.com/documents/20122/1732214/c+lounge+chung.jpg/6238c97c-a4ab-7342-b82c-a26562b62673?t=1741056612163"
+                class="rounded"
+                style="width: 150px; height: 100px; object-fit: cover"
+              />
+            </div>
+
+            <div class="d-flex gap-4">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="lounge"
+                  id="loungeYes"
+                />
+                <label class="form-check-label fw-bold" for="loungeYes"
+                  >Tôi muốn đăng ký</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="lounge"
+                  id="loungeNo"
+                  checked
+                />
+                <label
+                  class="form-check-label fw-bold text-muted"
+                  for="loungeNo"
+                  >Tôi không muốn đăng ký</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="content-card shadow-sm sticky-top" style="top: 100px">
+            <h5 class="fw-bold mb-4" style="color: #00305b">Chi tiết giá vé</h5>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Giá vé cơ bản</span>
+              <span id="base-price" class="fw-medium">0 VND</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Thuế & Phí</span>
+              <span class="text-success small fw-bold">ĐÃ BAO GỒM</span>
+            </div>
+            <hr class="my-4" />
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold">TỔNG CỘNG</span>
+              <h4 class="text-success fw-bold mb-0" id="total-price">0 VND</h4>
+            </div>
+            <button
+              class="btn btn-confirm w-100 mt-4 py-3 fw-bold shadow-sm"
+              id="btn-to-payment"
+            >
+              TIẾP TỤC THANH TOÁN
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="slogan-and-logo-footer">
+          <img
+            alt="Icon-Bamboo-Airways"
+            height="50"
+            src="https://www.bambooairways.com/o/wpbav-home-theme/css/assets/logo.png"
+          />
+          <div class="divider-footer-logo"></div>
+          <h5>HƠN CẢ MỘT CHUYẾN BAY</h5>
+        </div>
+        <div class="divider-footer"></div>
+        <div class="install-qr-footer">
+          <div class="install-app-qr">
+            <img
+              alt="qr_code"
+              height="70"
+              src="https://www.bambooairways.com/documents/20122/770343/app.png/4074ab42-5f15-760b-9bb7-5d522d7ff200?t=1697600790190"
+              width="70"
+            />
+            <div class="install-app-qr-content">
+              <h6>Cài đặt ứng dụng</h6>
+              <p>Quét mã ngay để cài đặt từ các cửa hàng ứng dụng!</p>
+            </div>
+          </div>
+          <div class="install-sticker-qr">
+            <img
+              alt="qr_code"
+              height="70"
+              src="https://www.bambooairways.com/documents/20122/770343/viber-bamboo.png/a21d4733-0669-665b-4b16-a12e153b7098?t=1697600790190"
+              width="70"
+            />
+            <div class="install-sticker-qr-content">
+              <h6>Cài đặt nhãn dán</h6>
+              <p>Quét mã ngay để sở hữu bộ nhãn dán Viber!</p>
+            </div>
+          </div>
+        </div>
+        <div class="divider-footer"></div>
+        <div class="chooser-footer">
+          <div class="bambooairways-footer">
+            <h5>Bamboo Airways</h5>
+            <div class="bambooairways-footer-choice">
+              <a href="BambooAirways/gioithieu.html">
+                Giới thiệu về Bamboo Airways
+              </a>
+              <a href="BambooAirways/thongdiep.html">
+                Thông điệp của Bamboo Airways
+              </a>
+              <a href="BambooAirways/nhandienthuonghieu.html">
+                Nhận diện thương hiệu
+              </a>
+            </div>
+          </div>
+          <div class="dieukhoanphaply-footer">
+            <h5>Điều khoản & Pháp lý</h5>
+            <div class="bambooairways-footer-choice">
+              <a href="Dieukhoan/dieukhoan.html">
+                Điều khoản sử dụng website
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <template id="flight-item-template">
+      <div class="flight-detail-row p-3 border rounded mb-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="text-center">
+            <h3 class="dep-time mb-0 fw-bold" style="color: #00305b"></h3>
+            <span class="dep-code badge bg-secondary"></span>
+          </div>
+          <div class="flex-grow-1 px-4 text-center">
+            <div class="airplane-line position-relative">
+              <i class="bi bi-airplane-fill text-success"></i>
+            </div>
+            <small class="flight-no text-muted d-block mt-2"></small>
+          </div>
+          <div class="text-center">
+            <h3 class="arr-time mb-0 fw-bold" style="color: #00305b"></h3>
+            <span class="arr-code badge bg-secondary"></span>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <script src="../js/chondichvu.js"></script>
+  </body>
+</html>

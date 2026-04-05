@@ -270,6 +270,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         localStorage.setItem('passengerInfo', JSON.stringify(info));
         alert("Xác nhận thành công!");
-        window.location.href = 'thanhtoan.html';
+        window.location.href = '../html/chondichvu.html';
     });
 });

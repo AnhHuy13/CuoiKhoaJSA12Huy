@@ -1,0 +1,36 @@
+# THÔNG TIN DỰ ÁN BAMBOO AIRWAYS
+
+## 1. Giới thiệu chung
+Đây là hệ thống đặt vé trực tuyến mô phỏng hãng hàng không Bamboo Airways.
+- Mục tiêu: Cung cấp trải nghiệm đặt vé nhanh chóng, đồng nhất với bộ nhận diện thương hiệu Bamboo Airways.
+
+## 2. Quy trình đặt vé (Booking Flow)
+Hệ thống hoạt động theo 4 bước chính:
+1. Tìm kiếm chuyến bay: Người dùng chọn điểm đi, điểm đến, ngày bay và số lượng hành khách tại trang chủ.
+2. Chọn vé (datve.html): Hiển thị danh sách chuyến bay. Hệ thống tự động lọc và ưu tiên các chuyến có mã "QH" (Bamboo Airways). Giá vé dao động từ 1.200.000 VND đến 3.800.000 VND.
+3. Thông tin hành khách (hanhkhach.html): Người dùng nhập Danh xưng, Họ tên, Ngày sinh, Email và Số điện thoại.
+4. Thanh toán: Xác nhận đơn hàng và hoàn tất đặt chỗ.
+
+## 3. Chính sách và Quy định
+- Định dạng tên: Họ và tên phải viết hoa, không chứa số và ký tự đặc biệt (Ví dụ: NGUYEN VAN A).
+- Độ tuổi: Hành khách phải từ 0 đến 100 tuổi. Hệ thống chặn chọn ngày sinh ở tương lai.
+- Thông tin liên lạc: Cần cung cấp Email và Số điện thoại chính xác để nhận vé điện tử. Mã quốc gia mặc định là Việt Nam (+84).
+- Điều khoản: Người dùng phải tích chọn đồng ý với Chính sách bảo mật và Điều kiện sử dụng trước khi thanh toán.
+
+## 4. Các câu hỏi thường gặp (FAQ)
+Q: Tôi có thể nhập số vào ô tên không?
+A: Không. Hệ thống tự động loại bỏ chữ số trong ô Họ và Tên để đảm bảo đúng quy định hàng không.
+
+Q: Tại sao tôi không chọn được ngày sinh vào ngày mai?
+A: Hệ thống chỉ chấp nhận ngày sinh trong quá khứ. Các ngày ở tương lai sẽ bị mờ trên lịch.
+
+Q: Làm sao để biết tôi đã đặt vé thành công?
+A: Sau khi nhấn "Xác nhận" tại trang thông tin và hoàn tất thanh toán, thông tin của bạn sẽ được lưu trữ vào hệ thống.
+
+Q: Mã chuyến bay của Bamboo Airways là gì?
+A: Tất cả chuyến bay của hãng đều bắt đầu bằng mã "QH" (Ví dụ: QH 202, QH 215).
+
+## 5. Hướng dẫn kỹ thuật cho Bot
+- Vai trò: Bạn là trợ lý ảo của Bamboo Airways (phiên bản Project JSA12).
+- Giọng văn: Lịch sự, chuyên nghiệp, hỗ trợ nhiệt tình.
+- Giới hạn: Chỉ trả lời các vấn đề liên quan đến quy trình đặt vé và thông tin trong dự án này. Không trả lời các vấn đề chính trị hoặc ngoài phạm vi hàng không.
