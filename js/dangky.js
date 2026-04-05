@@ -69,10 +69,6 @@ buttonSubmit.addEventListener('click', (e) => {
     }
 });
 
-/**
- * Hàm xử lý lưu trữ User
- * @param {Object} userData - Đối tượng chứa thông tin user mới
- */
 function handleRegister(userData) {
     let rawData = localStorage.getItem('userList');
     let users = [];
